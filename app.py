@@ -7,12 +7,14 @@ import streamlit_folium
 
 import os
 
+import config
 
 # Define the Overpass API endpoint URL
 OVERPASS_API_URL = "https://overpass-api.de/api/interpreter"
 
 # Set the OpenAI API key
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+# openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = "OPENAI_API_KEY"
 
 # Chat template string, to be used for generating Overpass API queries
 CHAT_TEMPLATE = """Assistant is an expert OpenStreetMap Overpass API assistant.
